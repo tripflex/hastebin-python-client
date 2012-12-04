@@ -1,10 +1,7 @@
 hastebin-python-client
 ======================
 
-Python 2.x client for hastebin.
-
-Original source from peterbe.com:
-www.peterbe.com/plog/hastebinit
+Python 2.x client for hastebin
 
 ## Installation
 ``` bash
@@ -15,9 +12,8 @@ chmod +x ~/bin/haste
 
 ## Usage
 ``` bash
-cat ~/myfile | haste
-haste < ~/myfile
-haste ~/myfile myotherfile
+cat ~/thefile | haste
+haste ~/thefile
 ```
 
 ## Troubleshooting
