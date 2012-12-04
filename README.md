@@ -7,15 +7,15 @@ Original source from peterbe.com:
 www.peterbe.com/plog/hastebinit
 
 ## Installation
-''' bash
+``` bash
 wget https://raw.github.com/tripflex/hastebin-python-client/master/haste.py
 mv haste.py ~/bin/haste
 chmod +x ~/bin/haste
-'''
+```
 
 ## Usage
-''' bash
+``` bash
 cat ~/myfile | haste
 haste < ~/myfile
 haste ~/myfile myotherfile
-'''
+```
