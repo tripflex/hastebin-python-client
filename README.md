@@ -1,15 +1,15 @@
 hastebin-python-client
 ======================
 
-Python 2.x client for hastebin, does not work on Python 3.
+Python 2.x client for hastebin.
 
 Original source from peterbe.com:
 www.peterbe.com/plog/hastebinit
 
 ## Installation
 ``` bash
-wget https://raw.github.com/tripflex/hastebin-python-client/master/haste.py
-mv haste.py ~/bin/haste
+wget https://raw.github.com/tripflex/hastebin-python-client/master/haste
+mv haste ~/bin/haste
 chmod +x ~/bin/haste
 ```
 
