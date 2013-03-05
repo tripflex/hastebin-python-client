@@ -22,7 +22,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 # ------------------------------------------------------------------------------------------
 
-import urllib2, sys, json
+import urllib2, sys
 
 URL = "http://hastebin.com"
 
@@ -31,9 +31,9 @@ if sys.stdin.isatty():
         data = "".join(filecontents.readlines()).strip()
 else:
     data = "".join(sys.stdin.readlines()).strip()
-    
+
 req = urllib2.Request(URL + "/documents", data)
 response = urllib2.urlopen(req)
 responsedata = response.read()
-
-sys.stdout.write("%s/%s\n" % (URL, json.loads(responsedata)['key']))
+responseeval = eval(responsedata)
+sys.stdout.write("%s/%s\n" % (URL, responseeval['key']))
