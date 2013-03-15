@@ -22,8 +22,12 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 # ------------------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 import urllib2
 import sys
+=======
+import urllib2, sys
+>>>>>>> 04e319b41f85781e64f9f25be1303cb077444719
 
 URL = "http://hastebin.com"
 
@@ -40,4 +44,8 @@ req = urllib2.Request(URL + "/documents", data)
 response = urllib2.urlopen(req)
 responsedata = response.read()
 responseeval = eval(responsedata)
+<<<<<<< HEAD
 sys.stdout.write("%s/%s\n" % (URL, responseeval['key']))
+=======
+sys.stdout.write("%s/%s\n" % (URL, responseeval['key']))
+>>>>>>> 04e319b41f85781e64f9f25be1303cb077444719
